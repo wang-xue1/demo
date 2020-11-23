@@ -1,0 +1,382 @@
+.whiteArea{
+    /* height: 940px; */
+    background: white;
+    padding-bottom: 28px;
+}
+.md{
+    width: 1200px;
+    margin: 0 auto;
+}
+.whiteAreaIn{
+    height: 100%;
+    /* background: yellow; */
+    
+}
+.NavBox{
+    height: 84px;
+    /* background: green; */
+}
+.NavBox .logo{
+    width: 176px;
+    height: 52px;
+    background: url(../images/logo.png) center center no-repeat;
+    overflow: hidden;
+    float: left;
+    margin-top: 16px;
+}
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.NavIn{
+    /* background: pink; */
+    float: left;
+    margin-top: 38px;
+} 
+.NavBox a{
+    font-size: 14px;
+    color: #2a2a2a;
+}
+.NavIn>a{
+  /* a之间会有小空隙，浮动时可以消除空隙，但也要给他的上一级元素加clearfix */
+    float: left; 
+     margin-left: 45px; 
+
+}
+.Message{
+    /* background: orange; */
+    float: right;
+}
+.Message>a{
+    float: left;
+}
+.Message .cartBox{
+    width: 75px;
+    height: 25px;
+    background: url(../images/cart.png) left center no-repeat;
+    text-indent: 28px;
+    line-height: 25px;
+    margin-top: 33px;
+}
+.Message .logoIn,.Message .regestor{
+     margin-top: 37px;
+}
+.Message .logoIn{
+    margin-left: 39px;
+    margin-right: 37px;
+}
+.bannerBox{
+    height: 361px;
+    background: yellow;
+    position: relative;
+}
+.bannerIn a{
+    display: block;
+    height: 361px;
+    background: url(../images/banner1.png) center center no-repeat;
+}
+.slideBar{
+    height: 100%;
+    width: 240px;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.slideBar>li{
+    padding: 0 25px;
+}
+.slideBar a{
+    color: white;
+    height: 72px;
+    line-height: 72px;
+    display: block;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+}
+.slideBar li:last-child a{
+    border-bottom: none;
+}
+.slideBar a>span{
+    float: left;
+}
+.slideBar a>img{
+    float: right;
+    margin-top: 30px;
+}
+.slideBar li:hover{
+    background: rgba(11,11,11,0.3);
+}
+.slideBar .content{
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    left: 240px;
+    top: 0;
+    background: pink;
+    display: none;
+}
+.slideBar>li:hover .content{
+    display: block;
+}
+/* 热门推荐 */
+.recementBox{
+    font-size: 16px;
+    color: #2d2d2d;
+    font-weight: normal;
+}
+.recementBox h3{
+    margin: 39px 0 19px 0;
+}
+.lists li{
+    float: left;
+    margin-right: 65px;
+    background:pink url(../images/libg1.png) no-repeat;
+    position: relative;
+    box-shadow: 0 2px 5px 3px rgba(2,2,2,0.2);
+    /* 
+    第一个值：x轴偏移
+    第二个值：y轴偏移
+    第三个值：阴影的模糊的
+    第四个值：阴影的大小
+    */
+}
+.lists li:last-child{
+    margin-right: 0;
+}
+.lists li a{
+    display: block;
+    width: 251px;
+    height: 182px;
+}
+.lists .bottomBox{
+    /* 定位的元素不写宽度时，他的状态是显示不出来的 */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    padding: 15px 15px 0 15px;
+    box-sizing: border-box;
+}  
+.bottomBox .top{
+    padding-bottom: 17px;
+    height: 30px;
+    overflow: hidden;
+    /* 
+    过渡效果
+    第一个值：变换的属性；
+    第二个值：动画执行的时间；
+    第三个值：运动的曲线(linear:匀速）
+    */
+    transition: height 0.5s linear;
+}
+.lists>li:hover .top{
+    height: 82px;
+}
+.bottomBox .top h5{
+    font-size: 14px;
+}
+.bottomBox .top h5:nth-child(2){
+    margin: 6px 0;
+}
+.bottomBox .top p{
+    font-size: 12px;
+    color: #9e9d9d;
+}
+.bottomBox .info{
+    height: 43px;
+    line-height: 43px;
+    font-size: 12px;
+}
+.bottomBox .info .price{
+    float: left;
+    color: #c71b1b;
+}
+.bottomBox .info .number{
+    float: right;
+    color: #868484;
+}
+/* 灰色区域 */
+.grayArea{
+    /* height: 600px; */
+    background: #f3f5f7;
+    padding: 34px 0 54px 0;
+}
+.grayAreaIn>div{
+    float: left;
+} 
+.grayAreaIn>.left{
+    float: left;
+    width: 224px;
+    height: 380px;
+    background: url(../images/bg3.png) center center no-repeat;
+    background-size: cover;
+}
+.grayAreaIn .conter1{
+    width: 397px;
+    height: 380px;
+    background: pink;
+    margin: 0 23px;
+}
+.grayAreaIn .conter1>a{
+    height: 185px;
+    display: block;
+
+}
+.grayAreaIn .conter1>a:first-child{
+    background: url(../images/bg1.png) center center no-repeat;
+}
+.grayAreaIn .conter1>a:last-child{
+    background: url(../images/bg2.png) center center no-repeat;
+    margin-top: 10px;
+}
+.grayAreaIn .conter2{
+    width: 251px;
+    height: 185px;
+    float: left;
+}
+.grayArea .lists li a{
+    height: 185px;
+}
+.grayArea .lists .last{
+     margin-top: 10px;
+}
+.grayAreaIn .right{
+    width: 257px;
+    height: 380px;
+    background: url(../images/libg2.png) top center no-repeat;
+    margin-left: 23px;
+    position: relative;
+}
+.grayAreaIn .right a{
+    display: block;
+    width: 257px;
+    height: 380px;
+}
+.grayAreaIn .right .rightBox{
+    width: 257px;
+    /* height: 310px; */
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 0 0 24px;
+    box-sizing: border-box;
+}
+.grayAreaIn .right .rightBox h5{
+    font-size: 16px;
+}
+.grayAreaIn .right .rightBox span{
+    display: inline-block;
+    width: 22px;
+    height:22px;
+    background: rgb(167, 162, 162);
+    text-align: center;
+    line-height: 22px;
+} 
+.grayAreaIn .right .rightBox .top{
+    height: 103px;
+    overflow: hidden;
+    /* background: pink; */
+    transition: height 0.4s linear  ;
+}
+.grayAreaIn>.right:hover .top{
+    height: 150px;
+}
+.grayAreaIn .right .rightBox h6{
+    font-size: 12px;
+    color: #666666;
+    margin-top: 21px;
+    padding-bottom: 20px;
+   border-bottom: 1px solid #333;
+}
+.grayAreaIn .right .rightBox .info{
+    line-height: 30px;
+}
+.black{
+    height: 370px;
+    background-color: #333333;
+}
+.black_b{
+  height: 370px;
+
+    /* background-color: skyblue; */
+    
+    box-sizing: border-box;
+    position: relative;
+}
+.bb{
+position: absolute;
+top: 0;
+left: 0;
+padding-top: 52px;
+padding-left: 15px;
+}
+dl{
+    float: left;
+    margin-right: 80px;
+    color: #cccccc;
+}
+dl dt{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+dl dd{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.aa{
+    position: absolute;
+    top: 52px;
+    right: 30px;
+    /* border: 1px solid red; */
+}
+.aa li{
+    margin-bottom: 20px;
+}
+.aa li .logo1{
+    margin-left: 15px;
+}
+.cc{
+    width: 100%;
+    height: 98px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 3px solid #000000;
+   box-sizing: border-box;
+   
+}
+.cc span{
+    margin-top: 10px;
+    line-height: 14px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #999999;
+}
+.guding{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    height: 250px;
+    width: 66px;
+    /* background-color: green; */
+    
+}
+.guding li{
+    height: 60px;
+    border-bottom: 1px solid #999999;
+   background-color: rgb(253, 253, 253);
+}
+.guding li:last-child{
+    border-bottom: 0;
+}
+.guding .iconfont{
+    font-size: 35px;
+    text-align: center;
+    line-height: 60px;
+}
